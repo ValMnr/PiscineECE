@@ -209,7 +209,7 @@
 1522771819 c:\users\pc metro\desktop\projet_tg\grman\coords.h
 	<cmath>
 
-1522937697 source:c:\users\pc metro\desktop\projet_tg\grman\grman.cpp
+1523186320 source:c:\users\pc metro\desktop\projet_tg\grman\grman.cpp
 	<cmath>
 	<unordered_map>
 	<unordered_set>
@@ -245,20 +245,20 @@
 	<stdio.h>
 	<iostream>
 
-1523114837 source:c:\users\pc metro\desktop\projet_tg\main.cpp
+1523186062 source:c:\users\pc metro\desktop\projet_tg\main.cpp
 	"grman/grman.h"
 	<iostream>
 	<allegro.h>
 	"graph.h"
 
-1523114970 c:\users\pc metro\desktop\projet_tg\graph.h
+1523186724 c:\users\pc metro\desktop\projet_tg\graph.h
 	<vector>
 	<map>
 	<string>
 	<memory>
 	"grman/grman.h"
 
-1523115035 source:c:\users\pc metro\desktop\projet_tg\graph.cpp
+1523186724 source:c:\users\pc metro\desktop\projet_tg\graph.cpp
 	"graph.h"
 	<iostream>
 	<bits/stdc++.h>
@@ -270,4 +270,72 @@
 	<queue>
 	<limits.h>
 	<limits>
+
+1523186724 source:c:\users\valentin\dropbox\tdg\projet_tgv3\graph.cpp
+	"graph.h"
+	<iostream>
+	<bits/stdc++.h>
+	<vector>
+	<fstream>
+	<algorithm>
+	<stdlib.h>
+	<stdio.h>
+	<queue>
+	<limits.h>
+	<limits>
+
+1523186724 c:\users\valentin\dropbox\tdg\projet_tgv3\graph.h
+	<vector>
+	<map>
+	<string>
+	<memory>
+	"grman/grman.h"
+
+1522771820 c:\users\valentin\dropbox\tdg\projet_tgv3\grman\grman.h
+	<allegro.h>
+	<string>
+	"grman_couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522771820 c:\users\valentin\dropbox\tdg\projet_tgv3\grman\grman_couleurs.h
+
+1522771819 c:\users\valentin\dropbox\tdg\projet_tgv3\grman\coords.h
+	<cmath>
+
+1522937697 c:\users\valentin\dropbox\tdg\projet_tgv3\grman\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1522771819 source:c:\users\valentin\dropbox\tdg\projet_tgv3\grman\coords.cpp
+	"coords.h"
+
+1523186320 source:c:\users\valentin\dropbox\tdg\projet_tgv3\grman\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1522937697 source:c:\users\valentin\dropbox\tdg\projet_tgv3\grman\widget.cpp
+	"widget.h"
+	<stdio.h>
+	<iostream>
+
+1523199757 source:c:\users\valentin\dropbox\tdg\projet_tgv3\main.cpp
+	"grman/grman.h"
+	<iostream>
+	<allegro.h>
+	"graph.h"
 

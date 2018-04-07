@@ -216,8 +216,8 @@ void Graph::make_example()
 
         while(!fic.eof() || j<nb_arete);
         */
-
-        m_index=nb_arete;
+        m_index1=nb_som;
+        m_index2=nb_arete;
         for(j=0; j<nb_arete; j++)
         {
             fic >> index_arete >> som_dep >> som_arrive >> coeff;

@@ -9,6 +9,7 @@
 
 #include "grman.h"
 #include <allegro.h>
+//#include<allegro_native_dialog.h>
 #include <png.h>
 #include <loadpng.h>
 #include <jpgalleg.h>
@@ -186,7 +187,8 @@ void init()
     show_mouse(screen);
 
     page=create_bitmap(SCREEN_W,SCREEN_H);
-
+//al_set_new_display_flags(ALLEGRO_FULLSCREEN_WINDOW);
+//page=al_create_display(800,600);
     rafraichir_clavier_souris();
     buf_effacer_page();
     buf_afficher_page();

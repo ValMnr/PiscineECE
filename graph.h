@@ -299,7 +299,7 @@ class Graph
         std::shared_ptr<GraphInterface> m_interface = nullptr;
 
         std::string m_fname;
-        int m_index;
+        int m_index2, m_index1;
 
 
 
@@ -316,7 +316,8 @@ class Graph
         void test_remove_edge(int eidx);
         void remove_vertex(int ideix);
         std::string get_fname(){return m_fname;}
-        int get_index(){return m_index;}
+        int get_index1(){return m_index1;}
+        int get_index2(){return m_index2;}
         /// Méthode spéciale qui construit un graphe arbitraire (démo)
         /// Voir implémentation dans le .cpp
         /// Cette méthode est à enlever et remplacer par un système
