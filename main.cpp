@@ -1,48 +1,16 @@
 #include "grman/grman.h"
 #include <iostream>
 #include <allegro.h>
+#include "grman/widget.h"
 //#include <allegro_native_dialog.h>
 
 #include "graph.h"
-
-
-int menu ()
-{
-
-    int selection;
-
-    BITMAP *image = load_bitmap("picmenu.bmp",NULL);
-    blit(image,screen,0,0,0,0, image->w, image->h);
-
-
-   if (key[KEY_LEFT]
-    {
-    if (event.mouse.x >= MYGAME_MENU_X1 && event.mouse.x < MYGAME_MENU_X2 &&
-        event.mouse.y >= MYGAME_MENU_Y1 && event.mouse.y < MYGAME_MENU_Y2)
-    {
-      selection = 1;
-    }
-
-        if (event.mouse.x >= MYGAME_MENU_X1 && event.mouse.x < MYGAME_MENU_X2 &&
-        event.mouse.y >= MYGAME_MENU_Y1 && event.mouse.y < MYGAME_MENU_Y2)
-    {
-      selection = 2;
-    }
-
-        if (event.mouse.x >= MYGAME_MENU_X1 && event.mouse.x < MYGAME_MENU_X2 &&
-        event.mouse.y >= MYGAME_MENU_Y1 && event.mouse.y < MYGAME_MENU_Y2)
-    {
-      selection = 3;
-    }
-  }
-    return selection;
-}
 
 int main()
 {
     int ided;
     int idv;
-    int som_dep, som_arr, index, poids, x, y;
+    int som_dep, som_arr, poids, x, y;
     std::string nom;
     int cap_port,rtm, nb_pop;
     int val;
@@ -55,16 +23,16 @@ int main()
 
     /// Un exemple de graphe
     Graph g;
+    grman::Widget w;
+//    Grman n;
+
     g.make_example();
 
 
     /// Vous gardez la main sur la "boucle de jeu"
     /// ( contrairement à des frameworks plus avancés )
   std::cout<<"*************************bienvenue*****************************"<<std::endl;
-        std::cout<<"Menu:\nAppuyez sur [e] pour effacer une arrete\nAppuyez sur [v] pour effacer un sommet"<<std::endl;
-        std::cout<<"Appuyez sur [n] pour creer une arrete"<<std::endl;
-        std::cout<<"Appuyez sur [b]pour creer un nouveau sommet"<<std::endl;
-    while ( !key[KEY_ESC] )
+    while ( !w.draw_bouton5()==1 )
     {
 
         /// Il faut appeler les méthodes d'update des objets qui comportent des widgets
@@ -73,26 +41,23 @@ int main()
         /// Mise à jour générale (clavier/souris/buffer etc...)
         grman::mettre_a_jour();
 
-     if(key[KEY_UP])
-        {
-        clear_bitmap(GraphInterface)
-        }
 
 
-        if(key[KEY_E])
+
+        if(w.draw_bouton1()==1)
         {
             std::cout<<"saisir index arete a supprimer"<<std::endl;
             std::cin>>ided;
             g.test_remove_edge(ided);
         }
 
-        if(key[KEY_V])
+        if(w.draw_bouton2()==1)
         {
             std::cout<<"saisir index sommet a effacer"<<std::endl;
             std::cin>>idv;
             g.remove_vertex(idv);
         }
-        if(key[KEY_B])
+        if(w.draw_bouton3()==1)
         {
             std::cout<<"combien de sommets voulez vous saisir?"<<std::endl;
             std::cin>>val;
@@ -125,7 +90,7 @@ int main()
 
 
 
-        if(key[KEY_N])
+        if(w.draw_bouton4())
         {
             std::cout<<"combien d'arete voulez vous saisir?"<<std::endl;
             std::cin>>val;
@@ -161,10 +126,15 @@ int main()
 
             }
         }
+        if(w.draw_bouton6()==1)
+        {
+
+        }
 
     }
     g.save(idv, ided);
     grman::fermer_allegro();
+    std::cout<<"a bientot :)"<<std::endl;
 
     return 0;
 }

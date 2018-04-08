@@ -227,7 +227,364 @@ void WidgetButton::interact_focus()
     if ( mouse_click )
         m_value = true;
 }
+int Widget::draw_bouton1()
+    {
+    int pos_mouse=1; //variable test afin de determiner si la souris se trouve sur le bouton
+    int color; // Pour definir la couleur du bouton
+    int c_hg; // Couleur du coin haut gauche
+    int c_bd; // Couleur du coin bas droite
+    int retour=0; // Renvoi
+    int i;
+      int posx=25;
+      int posy=50;
+      int pos2x=40;
+      int pos2y=80;
+      int color1,color2;
+      int profondeur=4;
+        color1=makecol(255,0,0);
+    // Si la souris est sur le bouton on modifie la valeur de pos_mouse
+    if(mouse_x>=posx && mouse_x<=pos2x && mouse_y>=posy && mouse_y<=pos2y)
+        {
+        pos_mouse=2;
+        //test du click
+        if(mouse_b & 1)
+            {
+            pos_mouse=3;
+            //si l'utilisateur appuie sur le bouton alors on retourne 1
+            retour=1;
+            }
+        }
+    else pos_mouse=1;
 
+    //effet de perspective
+    switch(pos_mouse)
+        {
+        case 1:c_hg=255;c_bd=0;
+               color=color1;
+               break;
+        case 2:c_hg=255;c_bd=0;
+               color=color2;
+               break;
+        case 3:c_hg=0;c_bd=255;
+               color=color2;
+               break;
+        }
+
+    //mise en place des lignes qui apporteront un effet d'appui
+    for(i=0;i!=profondeur;i++)
+        {
+        hline(page,posx,posy+i,pos2x-i,makecol(c_hg,c_hg,c_hg));
+        vline(page,posx+i,posy,pos2y-i,makecol(c_hg,c_hg,c_hg));
+        hline(page,posx+i,pos2y-i,pos2x,makecol(c_bd,c_bd,c_bd));
+        vline(page,pos2x-i,posy+i,pos2y,makecol(c_bd,c_bd,c_bd));
+        }
+
+    //remplissage
+    rectfill(page,posx+profondeur,posy+profondeur,pos2x-profondeur,pos2y-profondeur,color);
+
+
+    // Renvoi : 1 si le bouton a été cliqué, 0 sinon
+    return retour;
+    }
+    int Widget::draw_bouton2()
+    {
+    int pos_mouse=1; //variable test afin de determiner si la souris se trouve sur le bouton
+    int color; // Pour definir la couleur du bouton
+    int c_hg; // Couleur du coin haut gauche
+    int c_bd; // Couleur du coin bas droite
+    int retour=0; // Renvoi
+    int i;
+      int posx=50;
+      int posy=10;
+      int pos2x=80;
+      int pos2y=40;
+      int color1,color2;
+      int profondeur=4;
+
+        color1=makecol(0,0,255);
+    // Si la souris est sur le bouton on modifie la valeur de pos_mouse
+    if(mouse_x>=posx && mouse_x<=pos2x && mouse_y>=posy && mouse_y<=pos2y)
+        {
+        pos_mouse=2;
+        //test du click
+        if(mouse_b & 1)
+            {
+            pos_mouse=3;
+            //si l'utilisateur appuie sur le bouton alors on retourne 1
+            retour=1;
+            }
+        }
+    else pos_mouse=1;
+
+    //effet de perspective
+    switch(pos_mouse)
+        {
+        case 1:c_hg=255;c_bd=0;
+               color=color1;
+               break;
+        case 2:c_hg=255;c_bd=0;
+               color=color2;
+
+               break;
+        case 3:c_hg=0;c_bd=255;
+               color=color2;
+
+               break;
+        }
+
+    //mise en place des lignes qui apporteront un effet d'appui
+    for(i=0;i!=profondeur;i++)
+        {
+        hline(page,posx,posy+i,pos2x-i,makecol(c_hg,c_hg,c_hg));
+        vline(page,posx+i,posy,pos2y-i,makecol(c_hg,c_hg,c_hg));
+        hline(page,posx+i,pos2y-i,pos2x,makecol(c_bd,c_bd,c_bd));
+        vline(page,pos2x-i,posy+i,pos2y,makecol(c_bd,c_bd,c_bd));
+        }
+
+    //remplissage
+    rectfill(page,posx+profondeur,posy+profondeur,pos2x-profondeur,pos2y-profondeur,color);
+    // Ecriture du texte
+   // textprintf_centre(page,font,texte_x,texte_y,makecol(255,255,255),"%s",texte);
+
+    // Renvoi : 1 si le bouton a été cliqué, 0 sinon
+    return retour;
+    }
+    int Widget::draw_bouton3()
+    {
+    int pos_mouse=1; //variable test afin de determiner si la souris se trouve sur le bouton
+    int color; // Pour definir la couleur du bouton
+    int c_hg; // Couleur du coin haut gauche
+    int c_bd; // Couleur du coin bas droite
+    int retour=0; // Renvoi
+    int i;
+      int posx=25;
+      int posy=10;
+      int pos2x=40;
+      int pos2y=40;
+      int color1,color2;
+      int profondeur=4;
+        color1=makecol(0,255,0);
+    // Si la souris est sur le bouton on modifie la valeur de pos_mouse
+    if(mouse_x>=posx && mouse_x<=pos2x && mouse_y>=posy && mouse_y<=pos2y)
+        {
+        pos_mouse=2;
+        //test du click
+        if(mouse_b & 1)
+            {
+            pos_mouse=3;
+            //si l'utilisateur appuie sur le bouton alors on retourne 1
+            retour=1;
+            }
+        }
+    else pos_mouse=1;
+
+    //effet de perspective
+    switch(pos_mouse)
+        {
+        case 1:c_hg=255;c_bd=0;
+               color=color1;
+               break;
+        case 2:c_hg=255;c_bd=0;
+               color=color2;
+               break;
+        case 3:c_hg=0;c_bd=255;
+               color=color2;
+               break;
+        }
+
+    //mise en place des lignes qui apporteront un effet d'appui
+    for(i=0;i!=profondeur;i++)
+        {
+        hline(page,posx,posy+i,pos2x-i,makecol(c_hg,c_hg,c_hg));
+        vline(page,posx+i,posy,pos2y-i,makecol(c_hg,c_hg,c_hg));
+        hline(page,posx+i,pos2y-i,pos2x,makecol(c_bd,c_bd,c_bd));
+        vline(page,pos2x-i,posy+i,pos2y,makecol(c_bd,c_bd,c_bd));
+        }
+
+    //remplissage
+    rectfill(page,posx+profondeur,posy+profondeur,pos2x-profondeur,pos2y-profondeur,color);
+
+
+    // Renvoi : 1 si le bouton a été cliqué, 0 sinon
+    return retour;
+    }
+    int Widget::draw_bouton4()
+    {
+    int pos_mouse=1; //variable test afin de determiner si la souris se trouve sur le bouton
+    int color; // Pour definir la couleur du bouton
+    int c_hg; // Couleur du coin haut gauche
+    int c_bd; // Couleur du coin bas droite
+    int retour=0; // Renvoi
+    int i;
+      int posx=50;
+      int posy=50;
+      int pos2x=80;
+      int pos2y=80;
+      int color1,color2;
+      int profondeur=4;
+        color1=makecol(100,0,100);
+    // Si la souris est sur le bouton on modifie la valeur de pos_mouse
+    if(mouse_x>=posx && mouse_x<=pos2x && mouse_y>=posy && mouse_y<=pos2y)
+        {
+        pos_mouse=2;
+        //test du click
+        if(mouse_b & 1)
+            {
+            pos_mouse=3;
+            //si l'utilisateur appuie sur le bouton alors on retourne 1
+            retour=1;
+            }
+        }
+    else pos_mouse=1;
+
+    //effet de perspective
+    switch(pos_mouse)
+        {
+        case 1:c_hg=255;c_bd=0;
+               color=color1;
+               break;
+        case 2:c_hg=255;c_bd=0;
+               color=color2;
+               break;
+        case 3:c_hg=0;c_bd=255;
+               color=color2;
+               break;
+        }
+
+    //mise en place des lignes qui apporteront un effet d'appui
+    for(i=0;i!=profondeur;i++)
+        {
+        hline(page,posx,posy+i,pos2x-i,makecol(c_hg,c_hg,c_hg));
+        vline(page,posx+i,posy,pos2y-i,makecol(c_hg,c_hg,c_hg));
+        hline(page,posx+i,pos2y-i,pos2x,makecol(c_bd,c_bd,c_bd));
+        vline(page,pos2x-i,posy+i,pos2y,makecol(c_bd,c_bd,c_bd));
+        }
+
+    //remplissage
+    rectfill(page,posx+profondeur,posy+profondeur,pos2x-profondeur,pos2y-profondeur,color);
+
+
+    // Renvoi : 1 si le bouton a été cliqué, 0 sinon
+    return retour;
+    }
+int Widget::draw_bouton5()
+    {
+    int pos_mouse=1; //variable test afin de determiner si la souris se trouve sur le bouton
+    int color; // Pour definir la couleur du bouton
+    int c_hg; // Couleur du coin haut gauche
+    int c_bd; // Couleur du coin bas droite
+    int retour=0; // Renvoi
+    int i;
+      int posx=760;
+      int posy=20;
+      int pos2x=790;
+      int pos2y=20;
+      int color1,color2;
+      int profondeur=4;
+        color1=makecol(255,0,0);
+    // Si la souris est sur le bouton on modifie la valeur de pos_mouse
+    if(mouse_x>=posx && mouse_x<=pos2x && mouse_y>=posy && mouse_y<=pos2y)
+        {
+        pos_mouse=2;
+        //test du click
+        if(mouse_b & 1)
+            {
+            pos_mouse=3;
+            //si l'utilisateur appuie sur le bouton alors on retourne 1
+            retour=1;
+            }
+        }
+    else pos_mouse=1;
+
+    //effet de perspective
+    switch(pos_mouse)
+        {
+        case 1:c_hg=255;c_bd=0;
+               color=color1;
+               break;
+        case 2:c_hg=255;c_bd=0;
+               color=color2;
+               break;
+        case 3:c_hg=0;c_bd=255;
+               color=color2;
+               break;
+        }
+
+    //mise en place des lignes qui apporteront un effet d'appui
+    for(i=0;i!=profondeur;i++)
+        {
+        hline(page,posx,posy+i,pos2x-i,makecol(c_hg,c_hg,c_hg));
+        vline(page,posx+i,posy,pos2y-i,makecol(c_hg,c_hg,c_hg));
+        hline(page,posx+i,pos2y-i,pos2x,makecol(c_bd,c_bd,c_bd));
+        vline(page,pos2x-i,posy+i,pos2y,makecol(c_bd,c_bd,c_bd));
+        }
+
+    // Remplissage
+    rectfill(page,posx+profondeur,posy+profondeur,pos2x-profondeur,pos2y-profondeur,color);
+
+
+    // Renvoi : 1 si le bouton a été cliqué, 0 sinon
+    return retour;
+    }
+int Widget::draw_bouton6()
+    {
+    int pos_mouse=1; //variable test afin de determiner si la souris se trouve sur le bouton
+    int color; // Pour definir la couleur du bouton
+    int c_hg; // Couleur du coin haut gauche
+    int c_bd; // Couleur du coin bas droite
+    int retour=0;
+    int i;
+    int posx=50;
+      int posy=570;
+      int pos2x=80;
+      int pos2y=600;
+      int color1,color2;
+      int profondeur=4;
+        color1=makecol(255,255,255);
+    // test du click
+    if(mouse_x>=posx && mouse_x<=pos2x && mouse_y>=posy && mouse_y<=pos2y)
+        {
+        pos_mouse=2;
+
+        if(mouse_b & 1)
+            {
+            pos_mouse=3;
+            //si l'utilisateur appuie sur le bouton alors on retourne 1
+            retour=1;
+            }
+        }
+    else pos_mouse=1;
+
+    //effet de perspective
+    switch(pos_mouse)
+        {
+        case 1:c_hg=255;c_bd=0;
+               color=color1;
+               break;
+        case 2:c_hg=255;c_bd=0;
+               color=color2;
+               break;
+        case 3:c_hg=0;c_bd=255;
+               color=color2;
+               break;
+        }
+
+    //mise en place des lignes qui apporteront un effet d'appui
+    for(i=0;i!=profondeur;i++)
+        {
+        hline(page,posx,posy+i,pos2x-i,makecol(c_hg,c_hg,c_hg));
+        vline(page,posx+i,posy,pos2y-i,makecol(c_hg,c_hg,c_hg));
+        hline(page,posx+i,pos2y-i,pos2x,makecol(c_bd,c_bd,c_bd));
+        vline(page,pos2x-i,posy+i,pos2y,makecol(c_bd,c_bd,c_bd));
+        }
+
+    //remplissage
+    rectfill(page,posx+profondeur,posy+profondeur,pos2x-profondeur,pos2y-profondeur,color);
+
+
+    // Renvoi : 1 si le bouton a été cliqué, 0 sinon
+    return retour;
+    }
 
 
 /***************************************************

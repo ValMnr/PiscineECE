@@ -9,7 +9,7 @@
 #include <queue>
 #include <limits.h>
 #include <limits>
-
+#include"grman/widget.h"
 /***************************************************
                     VERTEX
 ****************************************************/
@@ -96,19 +96,10 @@ EdgeInterface::EdgeInterface(Vertex& from, Vertex& to)
     m_top_edge.reset_arrow_with_bullet();
 
     // Une boite pour englober les widgets de réglage associés
-    m_top_edge.add_child(m_box_edge);
-    m_box_edge.set_dim(24,60);
-    m_box_edge.set_bg_color(BLANCBLEU);
+   /*m_top_edge.add_child(m_box_edge);
+    m_box_edge.set_dim(10,10);
+    m_box_edge.set_bg_color(BLANCBLEU);*/
 
-    // Le slider de réglage de valeur
-    m_box_edge.add_child( m_slider_weight );
-    m_slider_weight.set_range(0.0, 100.0);  // Valeurs arbitraires, à adapter...
-    m_slider_weight.set_dim(16,40);
-    m_slider_weight.set_gravity_y(grman::GravityY::Up);
-
-    // Label de visualisation de valeur
-    m_box_edge.add_child( m_label_weight );
-    m_label_weight.set_gravity_y(grman::GravityY::Down);
 
 }
 
@@ -177,7 +168,7 @@ void Graph::make_example()
 
     int nb_som, nb_arete, nb_pop;
     int index_arete,som_dep, som_arrive, coeff;
-    int index, x, y, cap_port, croissance, rtm;
+    int index, x, y, cap_port,rtm;
     int i=0;
     int j=0;
     std::string nom;
@@ -196,7 +187,7 @@ void Graph::make_example()
         do
         {
             /// REMPLISSAGE des sommets
-            fic >> index >> nb_pop >> x >> y >> nom_fichier >> cap_port>> rtm; //>> croissance;
+            fic >> index >> nb_pop >> x >> y >> nom_fichier >> cap_port>> rtm;
             //std::cout<<index<<std::endl;
             add_interfaced_vertex(index, nb_pop, x, y, nom_fichier, cap_port, rtm);
             i++;
@@ -340,22 +331,7 @@ j=0;
                 j++;
                 }
 
-               /* else
-                {
 
-                    fic<< i-j <<" "<<m_edges[i+j].m_from<<" "<<m_edges[i+j].m_to<<" "<<m_edges[i+j].m_weight<<std::endl;
-
-                }
-
-                /*if(i!=ided && !idv)
-                {
-                    fic << i << " " << m_edges[i+j].m_from << " " << m_edges[i+j].m_to << " " << m_edges[i+j].m_weight << std::endl;
-                }
-                if(i==ided && idv)
-                {
-                    j++;
-                    fic << i << " " << m_edges[i+j].m_from << " " << m_edges[i+j].m_to << " " << m_edges[i+j].m_weight << std::endl;
-                }*/
             }
 
 
@@ -434,7 +410,5 @@ j=0;
             m_vertices.erase(ideix);
         }
     }
-
-
 
 
