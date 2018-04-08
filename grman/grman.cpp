@@ -9,7 +9,6 @@
 
 #include "grman.h"
 #include <allegro.h>
-//#include<allegro_native_dialog.h>
 #include <png.h>
 #include <loadpng.h>
 #include <jpgalleg.h>
@@ -55,7 +54,6 @@ Widget *gui_over = nullptr;
 Widget *gui_last_over = nullptr;
 Widget *gui_focus = nullptr;
 Widget *gui_leave = nullptr;
-Widget w;
 
 
 /// Gestion des contenus graphiques (fichiers images)
@@ -93,7 +91,7 @@ BITMAP *get_picture(std::string pic_name)
         if (pic)
         {
             g_pic_names.insert( std::make_pair(pic_name, pic) );
-            std::cout << "Loaded " << pic_name << std::endl;
+         //   std::cout << "Loaded " << pic_name << std::endl;
         }
         else
         {
@@ -161,7 +159,6 @@ void init()
 
     srand(time(NULL));
 
-
     /// Gestion des caractères accentués
     set_uformat(U_ASCII);
 
@@ -188,25 +185,16 @@ void init()
 
     show_mouse(screen);
 
-
     page=create_bitmap(SCREEN_W,SCREEN_H);
 
-//al_set_new_display_flags(ALLEGRO_FULLSCREEN_WINDOW);
-//page=al_create_display(800,600);
     rafraichir_clavier_souris();
     buf_effacer_page();
-
     buf_afficher_page();
-
 
     page_frame.pos.x = 0;
     page_frame.pos.y = 0;
     page_frame.dim.x = SCREEN_W;
     page_frame.dim.y = SCREEN_H;
-
-
-
-
 }
 
 void fermer_allegro()
@@ -225,6 +213,7 @@ void buf_effacer_page()
 
 void buf_afficher_page()
 {
+    grman::Widget w;
     if (!page) return;
     acquire_screen();
     w.draw_bouton1();
@@ -287,8 +276,6 @@ void thick_line(BITMAP *bmp, int x1, int y1, int x2, int y2, int thickness, int 
         for (int i=1-thickness; i<thickness; ++i)
             line(bmp, x1+i, y1, x2+i, y2, color);
 }
-
-
 
 
 } /// FIN DE NAMESPACE GRMAN

@@ -95,8 +95,6 @@ void init();
 void fermer_allegro();
 
 
-
-
 /// Buffer et sorties graphiques
 
 // Efface le buffer (utilise page_color)

@@ -184,12 +184,14 @@ class Widget
         bool is_gui_leave() {return this==gui_leave;}
 
         bool is_mouse_over();
-        int draw_bouton1();
+
+            int draw_bouton1();
         int draw_bouton2();
         int draw_bouton3();
         int draw_bouton4();
         int draw_bouton5();
           int draw_bouton6();
+
 
         /// Les accesseurs de "styles" sont à compléter...
         void set_bg_color(int bgc) { m_bg_color = bgc; }

@@ -203,62 +203,7 @@
 	<limits.h>
 	<limits>
 
-1522771819 source:c:\users\pc metro\desktop\projet_tg\grman\coords.cpp
-	"coords.h"
-
-1522771819 c:\users\pc metro\desktop\projet_tg\grman\coords.h
-	<cmath>
-
-1523186320 source:c:\users\pc metro\desktop\projet_tg\grman\grman.cpp
-	<cmath>
-	<unordered_map>
-	<unordered_set>
-	<utility>
-	<string>
-	<iostream>
-	<regex>
-	"grman.h"
-	<allegro.h>
-	<png.h>
-	<loadpng.h>
-	<jpgalleg.h>
-
-1522771820 c:\users\pc metro\desktop\projet_tg\grman\grman.h
-	<allegro.h>
-	<string>
-	"grman_couleurs.h"
-	"coords.h"
-	"widget.h"
-
-1522771820 c:\users\pc metro\desktop\projet_tg\grman\grman_couleurs.h
-
-1522937697 c:\users\pc metro\desktop\projet_tg\grman\widget.h
-	"grman.h"
-	<iostream>
-	<string>
-	<vector>
-	<algorithm>
-	<allegro.h>
-
-1522937697 source:c:\users\pc metro\desktop\projet_tg\grman\widget.cpp
-	"widget.h"
-	<stdio.h>
-	<iostream>
-
-1523186062 source:c:\users\pc metro\desktop\projet_tg\main.cpp
-	"grman/grman.h"
-	<iostream>
-	<allegro.h>
-	"graph.h"
-
-1523186724 c:\users\pc metro\desktop\projet_tg\graph.h
-	<vector>
-	<map>
-	<string>
-	<memory>
-	"grman/grman.h"
-
-1523186724 source:c:\users\pc metro\desktop\projet_tg\graph.cpp
+1522951341 source:c:\users\valentin\desktop\projet_tg\graph.cpp
 	"graph.h"
 	<iostream>
 	<bits/stdc++.h>
@@ -270,8 +215,126 @@
 	<queue>
 	<limits.h>
 	<limits>
+	<list>
 
-1523228597 source:c:\users\pc metro\desktop\projet_tgv3\graph.cpp
+1522954771 c:\users\valentin\desktop\projet_tg\graph.h
+	<vector>
+	<map>
+	<string>
+	<memory>
+	<list>
+	"grman/grman.h"
+
+1522771820 c:\users\valentin\desktop\projet_tg\grman\grman.h
+	<allegro.h>
+	<string>
+	"grman_couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522771820 c:\users\valentin\desktop\projet_tg\grman\grman_couleurs.h
+
+1522771819 c:\users\valentin\desktop\projet_tg\grman\coords.h
+	<cmath>
+
+1522937697 c:\users\valentin\desktop\projet_tg\grman\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1522771819 source:c:\users\valentin\desktop\projet_tg\grman\coords.cpp
+	"coords.h"
+
+1522937697 source:c:\users\valentin\desktop\projet_tg\grman\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1522937697 source:c:\users\valentin\desktop\projet_tg\grman\widget.cpp
+	"widget.h"
+	<stdio.h>
+	<iostream>
+
+1522952428 source:c:\users\valentin\desktop\projet_tg\main.cpp
+	"grman/grman.h"
+	<iostream>
+	<allegro.h>
+	"graph.h"
+
+1522771819 source:c:\users\valentin\desktop\last version\grman\coords.cpp
+	"coords.h"
+
+1522771819 c:\users\valentin\desktop\last version\grman\coords.h
+	<cmath>
+
+1523291586 source:c:\users\valentin\desktop\last version\grman\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1522771820 c:\users\valentin\desktop\last version\grman\grman.h
+	<allegro.h>
+	<string>
+	"grman_couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522771820 c:\users\valentin\desktop\last version\grman\grman_couleurs.h
+
+1523288833 c:\users\valentin\desktop\last version\grman\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1523288833 source:c:\users\valentin\desktop\last version\grman\widget.cpp
+	"widget.h"
+	<stdio.h>
+	<iostream>
+
+1523296423 source:c:\users\valentin\desktop\last version\main.cpp
+	"grman/grman.h"
+	<iostream>
+	<allegro.h>
+	"graph.h"
+	<chrono>
+	<thread>
+
+1523297039 c:\users\valentin\desktop\last version\graph.h
+	<vector>
+	<map>
+	<string>
+	<stack>
+	<memory>
+	<list>
+	<set>
+	<fstream>
+	"grman/grman.h"
+
+1523297025 source:c:\users\valentin\desktop\last version\graph.cpp
 	"graph.h"
 	<iostream>
 	<bits/stdc++.h>
@@ -281,233 +344,9 @@
 	<stdlib.h>
 	<stdio.h>
 	<queue>
+	<set>
 	<limits.h>
 	<limits>
-	"grman/widget.h"
-
-1523226927 c:\users\pc metro\desktop\projet_tgv3\graph.h
-	<vector>
-	<map>
-	<string>
-	<memory>
-	"grman/grman.h"
-
-1523226221 c:\users\pc metro\desktop\projet_tgv3\grman\grman.h
-	<allegro.h>
-	<string>
-	"grman_couleurs.h"
-	"coords.h"
-	"widget.h"
-
-1522771820 c:\users\pc metro\desktop\projet_tgv3\grman\grman_couleurs.h
-
-1522771819 c:\users\pc metro\desktop\projet_tgv3\grman\coords.h
-	<cmath>
-
-1523228680 c:\users\pc metro\desktop\projet_tgv3\grman\widget.h
-	"grman.h"
-	<iostream>
-	<string>
-	<vector>
-	<algorithm>
-	<allegro.h>
-
-1522771819 source:c:\users\pc metro\desktop\projet_tgv3\grman\coords.cpp
-	"coords.h"
-
-1523228689 source:c:\users\pc metro\desktop\projet_tgv3\grman\grman.cpp
-	<cmath>
-	<unordered_map>
-	<unordered_set>
-	<utility>
-	<string>
-	<iostream>
-	<regex>
-	"grman.h"
-	<allegro.h>
-	<png.h>
-	<loadpng.h>
-	<jpgalleg.h>
-
-1523228680 source:c:\users\pc metro\desktop\projet_tgv3\grman\widget.cpp
-	"widget.h"
-	<stdio.h>
-	<iostream>
-
-1523228597 source:c:\users\pc metro\desktop\projet_tgv3\main.cpp
-	"grman/grman.h"
-	<iostream>
-	<allegro.h>
-	"grman/widget.h"
-	"graph.h"
-
-1523221123 c:\users\pc metro\desktop\projet_tgv3\grman.h
-	<allegro.h>
-	<string>
-	"grman_couleurs.h"
-	"coords.h"
-	"widget.h"
-
-1522771820 c:\users\pc metro\desktop\projet_tgv3\grman_couleurs.h
-
-1522771819 c:\users\pc metro\desktop\projet_tgv3\coords.h
-	<cmath>
-
-1523223269 c:\users\pc metro\desktop\projet_tgv3\widget.h
-	"grman.h"
-	<iostream>
-	<string>
-	<vector>
-	<algorithm>
-	<allegro.h>
-
-1522771819 source:c:\users\pc metro\desktop\projet_tgv3\coords.cpp
-	"coords.h"
-
-1522937697 source:c:\users\pc metro\desktop\projet_tgv3\grman.cpp
-	<cmath>
-	<unordered_map>
-	<unordered_set>
-	<utility>
-	<string>
-	<iostream>
-	<regex>
-	"grman.h"
-	<allegro.h>
-	<png.h>
-	<loadpng.h>
-	<jpgalleg.h>
-
-1523224588 source:c:\users\pc metro\desktop\projet_tgv3\widget.cpp
-	"widget.h"
-	<stdio.h>
-	<iostream>
-
-1523228597 source:c:\users\pc metro\dropbox\tdg\projet_tgv4\graph.cpp
-	"graph.h"
-	<iostream>
-	<bits/stdc++.h>
-	<vector>
-	<fstream>
-	<algorithm>
-	<stdlib.h>
-	<stdio.h>
-	<queue>
-	<limits.h>
-	<limits>
-	"grman/widget.h"
-
-1523226927 c:\users\pc metro\dropbox\tdg\projet_tgv4\graph.h
-	<vector>
-	<map>
-	<string>
-	<memory>
-	"grman/grman.h"
-
-1523226221 c:\users\pc metro\dropbox\tdg\projet_tgv4\grman\grman.h
-	<allegro.h>
-	<string>
-	"grman_couleurs.h"
-	"coords.h"
-	"widget.h"
-
-1522771820 c:\users\pc metro\dropbox\tdg\projet_tgv4\grman\grman_couleurs.h
-
-1522771819 c:\users\pc metro\dropbox\tdg\projet_tgv4\grman\coords.h
-	<cmath>
-
-1523228680 c:\users\pc metro\dropbox\tdg\projet_tgv4\grman\widget.h
-	"grman.h"
-	<iostream>
-	<string>
-	<vector>
-	<algorithm>
-	<allegro.h>
-
-1522771819 source:c:\users\pc metro\dropbox\tdg\projet_tgv4\grman\coords.cpp
-	"coords.h"
-
-1523228689 source:c:\users\pc metro\dropbox\tdg\projet_tgv4\grman\grman.cpp
-	<cmath>
-	<unordered_map>
-	<unordered_set>
-	<utility>
-	<string>
-	<iostream>
-	<regex>
-	"grman.h"
-	<allegro.h>
-	<png.h>
-	<loadpng.h>
-	<jpgalleg.h>
-
-1523228597 source:c:\users\valentin\dropbox\tdg\projet_tgv4\graph.cpp
-	"graph.h"
-	<iostream>
-	<bits/stdc++.h>
-	<vector>
-	<fstream>
-	<algorithm>
-	<stdlib.h>
-	<stdio.h>
-	<queue>
-	<limits.h>
-	<limits>
-	"grman/widget.h"
-
-1523226927 c:\users\valentin\dropbox\tdg\projet_tgv4\graph.h
-	<vector>
-	<map>
-	<string>
-	<memory>
-	"grman/grman.h"
-
-1523226221 c:\users\valentin\dropbox\tdg\projet_tgv4\grman\grman.h
-	<allegro.h>
-	<string>
-	"grman_couleurs.h"
-	"coords.h"
-	"widget.h"
-
-1522771820 c:\users\valentin\dropbox\tdg\projet_tgv4\grman\grman_couleurs.h
-
-1522771819 c:\users\valentin\dropbox\tdg\projet_tgv4\grman\coords.h
-	<cmath>
-
-1523228680 c:\users\valentin\dropbox\tdg\projet_tgv4\grman\widget.h
-	"grman.h"
-	<iostream>
-	<string>
-	<vector>
-	<algorithm>
-	<allegro.h>
-
-1522771819 source:c:\users\valentin\dropbox\tdg\projet_tgv4\grman\coords.cpp
-	"coords.h"
-
-1523228689 source:c:\users\valentin\dropbox\tdg\projet_tgv4\grman\grman.cpp
-	<cmath>
-	<unordered_map>
-	<unordered_set>
-	<utility>
-	<string>
-	<iostream>
-	<regex>
-	"grman.h"
-	<allegro.h>
-	<png.h>
-	<loadpng.h>
-	<jpgalleg.h>
-
-1523229520 source:c:\users\valentin\dropbox\tdg\projet_tgv4\main.cpp
-	"grman/grman.h"
-	<iostream>
-	<allegro.h>
-	"grman/widget.h"
-	"graph.h"
-
-1523288833 source:c:\users\valentin\dropbox\tdg\projet_tgv4\grman\widget.cpp
-	"widget.h"
-	<stdio.h>
-	<iostream>
+	<list>
+	<time.h>
 
